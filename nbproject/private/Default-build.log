@@ -1,0 +1,29 @@
+make: Entering directory `/home/bambi/Dokumentumok/OS_dev/VSD/libc'
+mkdir -p /home/bambi/Dokumentumok/OS_dev/VSD/sysroot/usr/include
+cp -RTv include /home/bambi/Dokumentumok/OS_dev/VSD/sysroot/usr/include
+‘include/sys’ -> ‘/home/bambi/Dokumentumok/OS_dev/VSD/sysroot/usr/include/sys’
+‘include/sys/cdefs.h’ -> ‘/home/bambi/Dokumentumok/OS_dev/VSD/sysroot/usr/include/sys/cdefs.h’
+‘include/stdlib.h’ -> ‘/home/bambi/Dokumentumok/OS_dev/VSD/sysroot/usr/include/stdlib.h’
+‘include/string.h’ -> ‘/home/bambi/Dokumentumok/OS_dev/VSD/sysroot/usr/include/string.h’
+‘include/stdio.h’ -> ‘/home/bambi/Dokumentumok/OS_dev/VSD/sysroot/usr/include/stdio.h’
+make: Leaving directory `/home/bambi/Dokumentumok/OS_dev/VSD/libc'
+make: i686-elf-gcc: Command not found
+make: Entering directory `/home/bambi/Dokumentumok/OS_dev/VSD/kernel'
+make: i686-elf-gcc: Command not found
+mkdir -p /home/bambi/Dokumentumok/OS_dev/VSD/sysroot/usr/include
+cp -RTv include /home/bambi/Dokumentumok/OS_dev/VSD/sysroot/usr/include
+‘include/kernel’ -> ‘/home/bambi/Dokumentumok/OS_dev/VSD/sysroot/usr/include/kernel’
+‘include/kernel/tty.h’ -> ‘/home/bambi/Dokumentumok/OS_dev/VSD/sysroot/usr/include/kernel/tty.h’
+‘include/kernel/vga.h’ -> ‘/home/bambi/Dokumentumok/OS_dev/VSD/sysroot/usr/include/kernel/vga.h’
+make: Leaving directory `/home/bambi/Dokumentumok/OS_dev/VSD/kernel'
+make: Entering directory `/home/bambi/Dokumentumok/OS_dev/VSD/libc'
+mkdir -p /home/bambi/Dokumentumok/OS_dev/VSD/sysroot/usr/include
+cp -RTv include /home/bambi/Dokumentumok/OS_dev/VSD/sysroot/usr/include
+‘include/sys/cdefs.h’ -> ‘/home/bambi/Dokumentumok/OS_dev/VSD/sysroot/usr/include/sys/cdefs.h’
+‘include/stdlib.h’ -> ‘/home/bambi/Dokumentumok/OS_dev/VSD/sysroot/usr/include/stdlib.h’
+‘include/string.h’ -> ‘/home/bambi/Dokumentumok/OS_dev/VSD/sysroot/usr/include/string.h’
+‘include/stdio.h’ -> ‘/home/bambi/Dokumentumok/OS_dev/VSD/sysroot/usr/include/stdio.h’
+i686-elf-gcc --sysroot=/home/bambi/Dokumentumok/OS_dev/VSD/sysroot -isystem=/usr/include -c stdio/printf.c -o stdio/printf.o -std=gnu11 -O2 -g -Wall -Wextra   -D__is_myos_libc -Iinclude 
+make: i686-elf-gcc: Command not found
+make: *** [stdio/printf.o] Error 127
+make: Leaving directory `/home/bambi/Dokumentumok/OS_dev/VSD/libc'

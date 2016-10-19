@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="isodir">
+        <df name="boot">
+          <df name="grub">
+          </df>
+        </df>
+      </df>
+      <df name="kernel">
+        <df name="arch">
+          <df name="i386">
+            <in>boot.S</in>
+            <in>crti.S</in>
+            <in>crtn.S</in>
+            <in>gdt.S</in>
+            <in>idt.S</in>
+            <in>irq.S</in>
+            <in>tty.c</in>
+          </df>
+        </df>
+        <df name="include">
+          <df name="kernel">
+            <in>common.h</in>
+            <in>elf.h</in>
+            <in>gdt.h</in>
+            <in>idt.h</in>
+            <in>isr.h</in>
+            <in>multiboot.h</in>
+            <in>panic.h</in>
+            <in>timer.h</in>
+            <in>tty.h</in>
+            <in>vga.h</in>
+          </df>
+        </df>
+        <df name="kernel">
+          <in>common.c</in>
+          <in>elf.c</in>
+          <in>gdt.c</in>
+          <in>idt.c</in>
+          <in>irq.c</in>
+          <in>isr.c</in>
+          <in>kernel.c</in>
+          <in>panic.c</in>
+          <in>stacktrace.c</in>
+          <in>timer.c</in>
+        </df>
+      </df>
+      <df name="libc">
+        <df name="arch">
+          <df name="i386">
+          </df>
+        </df>
+        <df name="include">
+          <df name="sys">
+            <in>cdefs.h</in>
+          </df>
+          <in>printk.h</in>
+          <in>stdio.h</in>
+          <in>stdlib.h</in>
+          <in>string.h</in>
+          <in>vsprintf.h</in>
+        </df>
+        <df name="stdio">
+          <in>printf.c</in>
+          <in>printk.c</in>
+          <in>putchar.c</in>
+          <in>puts.c</in>
+          <in>vsprintf.c</in>
+        </df>
+        <df name="stdlib">
+          <in>abort.c</in>
+        </df>
+        <df name="string">
+          <in>memcmp.c</in>
+          <in>memcpy.c</in>
+          <in>memmove.c</in>
+          <in>memset.c</in>
+          <in>strcmp.c</in>
+          <in>strlen.c</in>
+        </df>
+      </df>
+      <df name="sysroot">
+        <df name="boot">
+        </df>
+        <df name="usr">
+          <df name="include">
+            <df name="kernel">
+              <in>common.h</in>
+              <in>elf.h</in>
+              <in>gdt.h</in>
+              <in>idt.h</in>
+              <in>isr.h</in>
+              <in>multiboot.h</in>
+              <in>panic.h</in>
+              <in>timer.h</in>
+              <in>tty.h</in>
+              <in>vga.h</in>
+            </df>
+            <df name="sys">
+              <in>cdefs.h</in>
+            </df>
+            <in>printk.h</in>
+            <in>stdio.h</in>
+            <in>stdlib.h</in>
+            <in>string.h</in>
+            <in>vsprintf.h</in>
+          </df>
+          <df name="lib">
+          </df>
+        </df>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile></projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+            <option name="gdb_source_dirs" value="."/>
+            <option name="debug_dir" value="/home/bambi/Dokumentumok/OS_dev/VSD/."/>
+            <option name="symbol_file" value="kernel/myos.kernel"/>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>./qu</runcommandpicklistitem>
+          <runcommandpicklistitem>./qemu.</runcommandpicklistitem>
+          <runcommandpicklistitem>./qemu.sh</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>./qemu.sh</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

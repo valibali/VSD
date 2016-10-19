@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="kernel">
+        <df name="arch">
+          <df name="i386">
+            <in>tty.c</in>
+          </df>
+        </df>
+        <df name="kernel">
+          <in>common.c</in>
+          <in>elf.c</in>
+          <in>gdt.c</in>
+          <in>idt.c</in>
+          <in>irq.c</in>
+          <in>isr.c</in>
+          <in>kernel.c</in>
+          <in>panic.c</in>
+          <in>stacktrace.c</in>
+          <in>timer.c</in>
+        </df>
+      </df>
+      <df name="libc">
+        <df name="stdio">
+          <in>printf.c</in>
+          <in>printk.c</in>
+          <in>putchar.c</in>
+          <in>puts.c</in>
+          <in>vsprintf.c</in>
+        </df>
+        <df name="stdlib">
+          <in>abort.c</in>
+        </df>
+        <df name="string">
+          <in>memcmp.c</in>
+          <in>memcpy.c</in>
+          <in>memmove.c</in>
+          <in>memset.c</in>
+          <in>strcmp.c</in>
+          <in>strlen.c</in>
+        </df>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile></projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0"
+                 commonFlags="-mtune=generic -march=pentiumpro -g -O2 -std=gnu11"/>
+        <element flagsID="1"
+                 commonFlags="-mtune=generic -march=pentiumpro -g -O2 -std=gnu11 -ffreestanding"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>./iso.sh</buildCommand>
+          <cleanCommand>./clean.sh</cleanCommand>
+          <executablePath>kernel/myos.kernel</executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <folder path="0/kernel/arch">
+        <cTool>
+          <incDir>
+            <pElem>kernel/arch/i386</pElem>
+            <pElem>../../../opt/cross/lib/gcc/i686-elf/5.3.0/include</pElem>
+            <pElem>kernel/include/kernel</pElem>
+            <pElem>sysroot/usr/include</pElem>
+            <pElem>kernel/include</pElem>
+            <pElem>kernel</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/kernel/kernel">
+        <cTool>
+          <incDir>
+            <pElem>kernel/kernel</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/libc/stdio">
+        <cTool>
+          <incDir>
+            <pElem>libc/stdio</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/libc/stdlib">
+        <cTool>
+          <incDir>
+            <pElem>libc/stdlib</pElem>
+            <pElem>libc</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/libc/string">
+        <cTool>
+          <incDir>
+            <pElem>libc/string</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <item path="kernel/arch/i386/tty.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="kernel/kernel/common.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>../../../opt/cross/lib/gcc/i686-elf/5.3.0/include</pElem>
+            <pElem>kernel</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="kernel/kernel/elf.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="kernel/kernel/gdt.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>../../../opt/cross/lib/gcc/i686-elf/5.3.0/include</pElem>
+            <pElem>kernel/include/kernel</pElem>
+            <pElem>kernel/include</pElem>
+            <pElem>kernel</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="kernel/kernel/idt.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>../../../opt/cross/lib/gcc/i686-elf/5.3.0/include</pElem>
+            <pElem>kernel/include/kernel</pElem>
+            <pElem>kernel/include</pElem>
+            <pElem>kernel</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="kernel/kernel/irq.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>../../../opt/cross/lib/gcc/i686-elf/5.3.0/include</pElem>
+            <pElem>kernel/include/kernel</pElem>
+            <pElem>kernel/include</pElem>
+            <pElem>kernel</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="kernel/kernel/isr.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>../../../opt/cross/lib/gcc/i686-elf/5.3.0/include</pElem>
+            <pElem>kernel/include/kernel</pElem>
+            <pElem>kernel/include</pElem>
+            <pElem>kernel</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="kernel/kernel/kernel.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>../../../opt/cross/lib/gcc/i686-elf/5.3.0/include</pElem>
+            <pElem>kernel/include/kernel</pElem>
+            <pElem>kernel/include</pElem>
+            <pElem>kernel</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="kernel/kernel/panic.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="kernel/kernel/stacktrace.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="kernel/kernel/timer.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>../../../opt/cross/lib/gcc/i686-elf/5.3.0/include</pElem>
+            <pElem>kernel/include/kernel</pElem>
+            <pElem>kernel/include</pElem>
+            <pElem>kernel</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="libc/stdio/printf.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../../opt/cross/lib/gcc/i686-elf/5.3.0/include</pElem>
+            <pElem>libc/include</pElem>
+            <pElem>libc</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="libc/stdio/printk.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../../opt/cross/lib/gcc/i686-elf/5.3.0/include</pElem>
+            <pElem>libc/include</pElem>
+            <pElem>libc</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="libc/stdio/putchar.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+          <incDir>
+            <pElem>sysroot/usr/include/kernel</pElem>
+            <pElem>sysroot/usr/include</pElem>
+            <pElem>libc</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="libc/stdio/puts.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>libc/include</pElem>
+            <pElem>libc</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="libc/stdio/vsprintf.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../../opt/cross/lib/gcc/i686-elf/5.3.0/include</pElem>
+            <pElem>libc/include</pElem>
+            <pElem>libc</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="libc/stdlib/abort.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="libc/string/memcmp.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../../opt/cross/lib/gcc/i686-elf/5.3.0/include</pElem>
+            <pElem>libc</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="libc/string/memcpy.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../../opt/cross/lib/gcc/i686-elf/5.3.0/include</pElem>
+            <pElem>libc</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="libc/string/memmove.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../../opt/cross/lib/gcc/i686-elf/5.3.0/include</pElem>
+            <pElem>libc</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="libc/string/memset.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../../opt/cross/lib/gcc/i686-elf/5.3.0/include</pElem>
+            <pElem>libc</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="libc/string/strcmp.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>libc</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="libc/string/strlen.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>../../../opt/cross/lib/gcc/i686-elf/5.3.0/include</pElem>
+            <pElem>libc</pElem>
+          </incDir>
+        </cTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
