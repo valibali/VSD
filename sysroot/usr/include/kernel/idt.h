@@ -46,6 +46,7 @@ void idt_set_gate(uint8_t num, idt_gate_t base, uint16_t sel, uint8_t flags);
 void idt_install(void);
 void irq_install(void);
 void irq_install_handler(size_t irq, irq_handler_chain_t handler);
+void isrs_install_handler(size_t isrs, irq_handler_t handler);
 
 extern void isr0 ();
 extern void isr1 ();

@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stddef.h>
+#include <string.h>
 
 // Some nice typedefs, to standardise sizes across platforms.
 // These typedefs are written for 32-bit X86.

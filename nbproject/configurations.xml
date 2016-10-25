@@ -8,6 +8,12 @@
             <in>tty.c</in>
           </df>
         </df>
+        <df name="include">
+          <df name="kernel">
+            <in>pmm.h</in>
+            <in>vmm.h</in>
+          </df>
+        </df>
         <df name="kernel">
           <in>common.c</in>
           <in>elf.c</in>
@@ -17,8 +23,10 @@
           <in>isr.c</in>
           <in>kernel.c</in>
           <in>panic.c</in>
+          <in>pmm.c</in>
           <in>stacktrace.c</in>
           <in>timer.c</in>
+          <in>vmm.c</in>
         </df>
       </df>
       <df name="libc">
@@ -41,6 +49,7 @@
           <in>strlen.c</in>
         </df>
       </df>
+      <in>gdb.init</in>
     </df>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -122,9 +131,15 @@
           </incDir>
         </cTool>
       </folder>
+      <item path="gdb.init" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="kernel/arch/i386/tty.c" ex="false" tool="0" flavor2="3">
         <cTool flags="1">
         </cTool>
+      </item>
+      <item path="kernel/include/kernel/pmm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="kernel/include/kernel/vmm.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="kernel/kernel/common.c" ex="false" tool="0" flavor2="3">
         <cTool flags="1">
@@ -188,6 +203,8 @@
       </item>
       <item path="kernel/kernel/panic.c" ex="false" tool="0" flavor2="2">
       </item>
+      <item path="kernel/kernel/pmm.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="kernel/kernel/stacktrace.c" ex="false" tool="0" flavor2="2">
       </item>
       <item path="kernel/kernel/timer.c" ex="false" tool="0" flavor2="3">
@@ -199,6 +216,8 @@
             <pElem>kernel</pElem>
           </incDir>
         </cTool>
+      </item>
+      <item path="kernel/kernel/vmm.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="libc/stdio/printf.c" ex="false" tool="0" flavor2="3">
         <cTool flags="0">

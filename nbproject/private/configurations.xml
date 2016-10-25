@@ -29,9 +29,11 @@
             <in>isr.h</in>
             <in>multiboot.h</in>
             <in>panic.h</in>
+            <in>pmm.h</in>
             <in>timer.h</in>
             <in>tty.h</in>
             <in>vga.h</in>
+            <in>vmm.h</in>
           </df>
         </df>
         <df name="kernel">
@@ -43,8 +45,10 @@
           <in>isr.c</in>
           <in>kernel.c</in>
           <in>panic.c</in>
+          <in>pmm.c</in>
           <in>stacktrace.c</in>
           <in>timer.c</in>
+          <in>vmm.c</in>
         </df>
       </df>
       <df name="libc">
@@ -94,9 +98,11 @@
               <in>isr.h</in>
               <in>multiboot.h</in>
               <in>panic.h</in>
+              <in>pmm.h</in>
               <in>timer.h</in>
               <in>tty.h</in>
               <in>vga.h</in>
+              <in>vmm.h</in>
             </df>
             <df name="sys">
               <in>cdefs.h</in>
@@ -111,6 +117,7 @@
           </df>
         </df>
       </df>
+      <in>gdb.init</in>
     </df>
   </logicalFolder>
   <projectmakefile></projectmakefile>
@@ -140,6 +147,7 @@
         </gdb_interceptlist>
         <gdb_options>
           <DebugOptions>
+            <option name="gdb_init_file" value="gdb.init"/>
             <option name="gdb_source_dirs" value="."/>
             <option name="debug_dir" value="/home/bambi/Dokumentumok/OS_dev/VSD/."/>
             <option name="symbol_file" value="kernel/myos.kernel"/>
