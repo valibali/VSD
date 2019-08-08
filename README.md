@@ -1,3 +1,4 @@
 # VSD OS
-Mainly based on the OSDev.org - Meaty skeleton.
-Heavily influenced by JamesM study kernels.
+Influences:
+ - OSDev.org
+ - Works of James M. Molloy
